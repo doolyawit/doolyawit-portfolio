@@ -1,4 +1,4 @@
-name: QA Review
+name: CI
 on:
   push:
     branches-ignore:

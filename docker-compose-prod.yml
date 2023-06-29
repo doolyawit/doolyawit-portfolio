@@ -1,0 +1,7 @@
+version: "3.9"
+
+services:
+  movie:
+    image: registry.digitalocean.com/company/image-name:latest
+    ports:
+      - 3001:3000

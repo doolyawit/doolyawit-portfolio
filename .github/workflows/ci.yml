@@ -1,0 +1,39 @@
+name: QA Review
+on:
+  push:
+    branches-ignore:
+      - main
+      - develop
+
+jobs:
+  integration:
+    name: QA Review
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.4.1
+        with:
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+          submodules: recursive
+      - name: Use Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 18.16.x
+          registry-url: 'https://npm.pkg.github.com'
+      - name: Get NPM cache directory
+        id: npm-cache-dir
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+      - name: Install Packages
+        run: npm install
+      - name: QA Review
+        run: |
+          npm run lint
+          npm run format:check
+          npm run build
+        env:
+          CI: true

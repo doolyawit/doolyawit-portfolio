@@ -1,0 +1,38 @@
+name: Deployment Production
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  build-and-push-image:
+    name: Deployment Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.4.1
+        with:
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+          submodules: recursive
+      - name: Use Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 18.16.x
+          registry-url: 'https://npm.pkg.github.com'
+      - name: Build Image
+        run: docker image build --no-cache --tag ${{ secrets.AWS_ECR_ACCOUNT_URL }}:latest --file ./Dockerfile .
+      - name: Check ECR Permission
+        if: success()
+        id: ecr
+        uses: jwalton/gh-ecr-login@v1
+        with:
+          access-key-id: ${{ secrets.AWS_ECR_ACCESS_KEY_ID }}
+          secret-access-key: ${{ secrets.AWS_ECR_ACCESS_SECRET_KEY }}
+          region: ${{ secrets.AWS_REGION }}
+      - name: Push Image
+        if: success()
+        run: docker push ${{ secrets.AWS_ECR_ACCOUNT_URL }}:latest

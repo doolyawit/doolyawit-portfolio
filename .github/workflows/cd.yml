@@ -24,15 +24,9 @@ jobs:
           node-version: 18.16.x
           registry-url: 'https://npm.pkg.github.com'
       - name: Build Image
-        run: docker image build --no-cache --tag ${{ secrets.AWS_ECR_ACCOUNT_URL }}:latest --file ./Dockerfile .
-      - name: Check ECR Permission
-        if: success()
-        id: ecr
-        uses: jwalton/gh-ecr-login@v1
-        with:
-          access-key-id: ${{ secrets.AWS_ECR_ACCESS_KEY_ID }}
-          secret-access-key: ${{ secrets.AWS_ECR_ACCESS_SECRET_KEY }}
-          region: ${{ secrets.AWS_REGION }}
+        run: docker image build --no-cache --tag registry.digitalocean.com/poc-20scoops/diwx-landing:latest --file ./Dockerfile .
       - name: Push Image
         if: success()
-        run: docker push ${{ secrets.AWS_ECR_ACCOUNT_URL }}:latest
+        run: |
+          docker login registry.digitalocean.com -u ${{ secrets.DGO_API_TOKEN }} -p ${{ secrets.DGO_API_TOKEN }}
+          docker push registry.digitalocean.com/poc-20scoops/diwx-landing:latest

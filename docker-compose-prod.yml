@@ -2,6 +2,6 @@ version: "3.9"
 
 services:
   movie:
-    image: registry.digitalocean.com/company/image-name:latest
+    image: registry.digitalocean.com/poc-20scoops/diwx-landing:latest
     ports:
       - 3001:3000

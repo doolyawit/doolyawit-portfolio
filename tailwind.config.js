@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -24,6 +30,13 @@ module.exports = {
       fontFamily: {
         jk: ['var(--font-jakarta)', 'sans-serif'],
         st: ['var(--font-satoshi)', 'sans-serif'],
+      },
+      fontSize: {
+        caption: ['20px', '19.4px'],
+        body: ['20px', '24px'],
+        title: ['39.1px', '37.92px'],
+        head2: ['61px', '59.17px'],
+        head1: ['76.3px', '74px'],
       },
     },
   },

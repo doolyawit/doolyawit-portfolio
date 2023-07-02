@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format:fix": "prettier 'src/**/*.{ts,tsx}' --write",
+    "format:fix": "prettier 'src/**/*.{ts,tsx}' 'app/**/*.{ts,tsx}' 'pages/**/*.{ts,tsx}' --write",
     "format:check": "prettier 'src/**/*.{ts,tsx}' --check",
     "prepare": "husky install"
   },

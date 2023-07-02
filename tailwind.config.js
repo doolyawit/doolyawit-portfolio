@@ -22,7 +22,7 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         gray: '#1b1b1b',
-        beige: '##fffef5',
+        white: '##fffef5',
         yellow: '##ffda58',
         green: '#14D87A',
         orange: '#f36336',
@@ -33,6 +33,7 @@ module.exports = {
       },
       fontSize: {
         caption: ['20px', '19.4px'],
+        menu: ['19px', '18.43px'],
         body: ['20px', '24px'],
         title: ['39.1px', '37.92px'],
         head2: ['61px', '59.17px'],

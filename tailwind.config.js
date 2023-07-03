@@ -23,7 +23,7 @@ module.exports = {
         transparent: 'transparent',
         gray: '#1b1b1b',
         beige: '#fffef5',
-        yellow: '##ffda58',
+        yellow: '#ffda58',
         green: '#14D87A',
         orange: '#f36336',
       },

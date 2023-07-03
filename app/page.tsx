@@ -1,11 +1,13 @@
 import React from 'react';
 import 'app/globals.css';
-import NavBar from '@/components/NavBar/NavBar';
+import NavBar from '@/components/navigation/NavBar';
+import Introduction from '@/components/introduction/Introduction';
 
 export default function Home() {
   return (
     <div>
-      <NavBar height="138" width="1280" />
+      <NavBar />
+      <Introduction />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { jakarta, satoshi } from './font';
 import React from 'react';
 
 export const metadata = {
-  title: 'dY',
+  title: `dY's Portfolio`,
   description: 'Doolyawit Yodkaew Portfolio',
 };
 
@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${jakarta.variable} ${satoshi.variable}`}>
+      <body className={`${jakarta.variable} ${satoshi.variable} bg-beige`}>
         {children}
       </body>
     </html>

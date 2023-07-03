@@ -10,7 +10,9 @@ function SiteLogo({ logo = 'dY.', height }: SiteLogoProps) {
     <div
       className={`flex h-[${height}px] w-1/3 flex-1 shrink grow basis-0 items-start justify-start gap-2.5 p-4`}
     >
-      <div className="font-jk text-head1 font-extrabold text-gray">{logo}</div>
+      <div className="font-jk text-head1 font-extrabold text-gray dark:text-beige">
+        {logo}
+      </div>
     </div>
   );
 }

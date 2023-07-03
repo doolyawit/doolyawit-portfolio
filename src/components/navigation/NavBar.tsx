@@ -12,7 +12,7 @@ function NavBar() {
   ];
   return (
     <div
-      className={`inline-flex h-[138px] w-screen items-center justify-center gap-4 bg-beige p-4`}
+      className={`inline-flex h-[138px] w-screen items-center justify-center gap-4 bg-beige p-4 dark:bg-gray`}
     >
       <SiteLogo logo="dY." height="106" />
 

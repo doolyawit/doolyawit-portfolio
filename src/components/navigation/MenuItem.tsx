@@ -13,22 +13,19 @@ interface Props {
 }
 
 const Menu: React.FC<Props> = ({ menuItems, height }) => {
-  //TODO: menu hover effect
   return (
-    <div
-      className={`flex h-[${height}px] w-1/3 flex-1 items-center justify-center gap-2 p-4`}
-    >
-      <div className="flex space-x-4">
+    <div className={`flex h-[${height}px] w-1/3 flex-1  gap-2 p-4`}>
+      <div className="flex items-center justify-center space-x-4">
         {menuItems.map((item) => (
           <div
             key={item.link}
-            className="group h-10 w-[90px] text-center font-jk text-menu font-medium text-gray"
+            className="group h-10 w-[90px] text-center font-jk text-menu font-medium text-gray dark:text-beige"
           >
             <Link href={item.link}>{item.label}</Link>
             <HoverLineSvg
               color="ffda58"
               width="70"
-              height="24"
+              height="16"
               className="invisible mx-auto group-hover:visible"
             />
           </div>

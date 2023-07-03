@@ -14,6 +14,7 @@ function NavBar({ height, width }: NavBarProps) {
     { label: 'Contact', link: '/contact' },
   ];
   return (
+    //TODO: color of nav bar
     <div
       className={`bg-beige inline-flex h-[${height}px] w-[${width}px] items-center justify-center gap-4 p-4`}
     >

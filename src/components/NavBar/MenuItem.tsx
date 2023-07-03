@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 interface MenuItem {
@@ -7,11 +8,12 @@ interface MenuItem {
 
 interface Props {
   menuItems: MenuItem[];
-  width?: string;
-  height?: string;
+  width: string;
+  height: string;
 }
 
 const Menu: React.FC<Props> = ({ menuItems, width, height }) => {
+  //TODO: menu hover effect
   return (
     <div
       className={`flex h-[${height}px] w-[${width}px]  items-center justify-center gap-2 p-4`}
@@ -22,7 +24,7 @@ const Menu: React.FC<Props> = ({ menuItems, width, height }) => {
             key={item.link}
             className="h-10 w-[90px] text-center font-jk text-menu font-medium leading-tight text-gray"
           >
-            {item.label}
+            <Link href={item.link}>{item.label}</Link>
           </div>
         ))}
       </div>

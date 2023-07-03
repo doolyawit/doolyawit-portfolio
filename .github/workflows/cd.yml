@@ -1,0 +1,32 @@
+name: CD
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push-image:
+    name: Deployment Production
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.4.1
+        with:
+          access_token: ${{ github.token }}
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.ref }}
+          submodules: recursive
+      - name: Use Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: 18.16.x
+          registry-url: 'https://npm.pkg.github.com'
+      - name: Build Image
+        run: docker image build --no-cache --tag registry.digitalocean.com/poc-20scoops/diwx-landing:latest --file ./Dockerfile .
+      - name: Push Image
+        if: success()
+        run: |
+          docker login registry.digitalocean.com -u ${{ secrets.DGO_API_TOKEN }} -p ${{ secrets.DGO_API_TOKEN }}
+          docker push registry.digitalocean.com/poc-20scoops/diwx-landing:latest

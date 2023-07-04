@@ -1,0 +1,14 @@
+{
+  "nav_bar": {
+    "home": "Home",
+    "about_me": "About Me",
+    "project": "Project",
+    "contact": "Contact"
+  },
+  "greeting": "hey,",
+  "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nulla mauris. Donec ornare nibh eget risus interdum, sit amet pellentesque tellus dignissim. Sed bibendum tellus odio, a sodales massa ullamcorperut.",
+  "hire_me": "Hire Me",
+  "doolyawit_yodkaew": "DOOLYAWIT YODKAEW",
+  "front_end": "Front End",
+  "developer": "Developer"
+}

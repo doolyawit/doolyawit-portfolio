@@ -13,11 +13,11 @@ interface Props {
 
 const Menu: React.FC<Props> = ({ menuItems, height }) => {
   return (
-    <div className={`flex h-[${height}px] w-1/3 flex-1  gap-2 p-4`}>
-      <div className="flex items-center justify-center space-x-4">
-        {menuItems.map((item) => (
+    <div className={`flex h-[${height}px] w-1/3 flex-1 gap-2 p-4`}>
+      <div className="flex items-center justify-center space-x-4 pt-4">
+        {menuItems.map((item, index) => (
           <div
-            key={item.link}
+            key={index}
             className="group h-10 w-[90px] text-center font-jk text-menu font-medium text-gray dark:text-beige"
           >
             <Link href={item.link}>{item.label}</Link>

@@ -5,22 +5,9 @@ interface StarSvgProps {
 }
 function StarSvg({ width, height }: StarSvgProps) {
   return (
-    <svg
-      width={width}
-      height={height}
-      viewBox="0 0 200 200"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
+    <svg width={width} height={height} viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_2_815)">
-        <mask
-          id="mask0_2_815"
-          maskUnits="userSpaceOnUse"
-          x="0"
-          y="0"
-          width="200"
-          height="200"
-        >
+        <mask id="mask0_2_815" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
           <path d="M200 0H0V200H200V0Z" fill="white" />
         </mask>
         <g mask="url(#mask0_2_815)">
@@ -33,14 +20,7 @@ function StarSvg({ width, height }: StarSvgProps) {
         </g>
       </g>
       <defs>
-        <linearGradient
-          id="paint0_linear_2_815"
-          x1="14"
-          y1="26"
-          x2="179"
-          y2="179.5"
-          gradientUnits="userSpaceOnUse"
-        >
+        <linearGradient id="paint0_linear_2_815" x1="14" y1="26" x2="179" y2="179.5" gradientUnits="userSpaceOnUse">
           <stop stopColor={'currentColor'} />
         </linearGradient>
         <clipPath id="clip0_2_815">

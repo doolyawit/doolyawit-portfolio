@@ -1,20 +1,19 @@
 'use client';
-import { ThemeContext } from '@/contexts/ThemeContext';
-import React, { useContext } from 'react';
+
+import { useTheme } from 'next-themes';
 
 function ToggleButton() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, setTheme } = useTheme();
 
   return (
-    //transition smooth
     <div
-      className={`flex flex-1 shrink grow basis-0 justify-center gap-2.5 self-center ${
-        theme === 'dark' ? 'dark' : ''
-      }`}
+      className={`flex flex-1 shrink grow basis-0 justify-center gap-2.5 self-center`}
     >
       <div
         className="relative flex h-[69.25px] w-1/3 cursor-pointer items-center justify-center dark:bg-gray"
-        onClick={toggleTheme}
+        onClick={() => {
+          setTheme(theme === 'dark' ? 'light' : 'dark');
+        }}
       >
         <svg
           width="70"
@@ -22,9 +21,7 @@ function ToggleButton() {
           viewBox="0 0 70 30"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={`self-center dark:hidden items-center${
-            theme ? 'opacity-0' : 'opacity-100'
-          } transition-opacity duration-300 ease-in-out`}
+          className={`items-center self-center transition-opacity duration-300 ease-in-out dark:hidden`}
         >
           <rect
             x="0.5"
@@ -49,9 +46,7 @@ function ToggleButton() {
           viewBox="0 0 71 31"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className={`hidden dark:block ${
-            theme ? 'opacity-100' : 'opacity-0'
-          } transition-opacity duration-300 ease-in-out`}
+          className={`hidden transition-opacity duration-300 ease-in-out dark:block`}
         >
           <g id="Group 81">
             <rect

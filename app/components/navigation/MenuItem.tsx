@@ -1,7 +1,5 @@
 import Link from 'next/link';
-import React, { useContext } from 'react';
 import HoverLineSvg from './svg/HoverLineSvg';
-import { ThemeContext } from '@/contexts/ThemeContext';
 
 interface MenuItem {
   label: string;
@@ -14,7 +12,6 @@ interface Props {
 }
 
 const Menu: React.FC<Props> = ({ menuItems, height }) => {
-  const { theme } = useContext(ThemeContext);
   return (
     <div className={`flex h-[${height}px] w-1/3 flex-1  gap-2 p-4`}>
       <div className="flex items-center justify-center space-x-4">
@@ -25,10 +22,9 @@ const Menu: React.FC<Props> = ({ menuItems, height }) => {
           >
             <Link href={item.link}>{item.label}</Link>
             <HoverLineSvg
-              color={theme ? '14D87A' : 'ffda58'}
               width="70"
               height="16"
-              className="invisible mx-auto group-hover:visible"
+              className="invisible mx-auto text-green group-hover:visible dark:text-yellow"
             />
           </div>
         ))}

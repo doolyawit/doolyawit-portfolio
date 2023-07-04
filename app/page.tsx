@@ -1,14 +1,14 @@
 'use client';
-import React, { useContext } from 'react';
+
 import 'app/globals.css';
-import NavBar from '@/components/navigation/NavBar';
-import Introduction from '@/components/introduction/Introduction';
-import { ThemeContext } from '@/contexts/ThemeContext';
+import NavBar from './components/navigation/NavBar';
+import Introduction from './components/introduction/Introduction';
+import { useTheme } from 'next-themes';
 
 export default function Home() {
-  const { theme } = useContext(ThemeContext);
+  const { theme } = useTheme();
   return (
-    <div className={`${theme === 'dark' ? 'dark' : ''}`}>
+    <div className={`${theme === 'dark' ? 'dark' : 'light'}`}>
       <NavBar />
       <Introduction />
     </div>

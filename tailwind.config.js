@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -29,8 +30,8 @@ module.exports = {
         orange: '#f36336',
       },
       fontFamily: {
-        jk: ['var(--font-jakarta)', 'sans-serif'],
-        st: ['var(--font-satoshi)', 'sans-serif'],
+        jk: ['Plus Jakarta Sans', 'sans-serif'],
+        st: ['Satoshi', 'sans-serif'],
       },
       fontSize: {
         caption: ['20px', '19.4px'],
@@ -44,3 +45,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+module.exports = config;

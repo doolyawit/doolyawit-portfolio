@@ -1,7 +1,6 @@
 import 'app/globals.css';
-import { jakarta, satoshi } from './fonts';
-import React from 'react';
-import { ThemeProvider } from '@/contexts/ThemeContext';
+import { satoshi } from './fonts';
+import { NextThemeProvider } from './contexts/NextThemeProvider';
 
 export const metadata = {
   title: `dY's Portfolio`,
@@ -14,12 +13,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ThemeProvider>
-      <html lang="en">
-        <body className={`${jakarta.variable} ${satoshi.variable} bg-beige`}>
-          {children}
-        </body>
-      </html>
-    </ThemeProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${satoshi.variable}`}>
+        <NextThemeProvider>{children}</NextThemeProvider>
+      </body>
+    </html>
   );
 }

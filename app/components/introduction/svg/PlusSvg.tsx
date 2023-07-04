@@ -1,10 +1,9 @@
-import React from 'react';
 interface PlusSvgProps {
   width: string;
   height: string;
-  color: string;
 }
-function PlusSvg({ width, height, color }: PlusSvgProps) {
+
+function PlusSvg({ width, height }: PlusSvgProps) {
   return (
     <svg
       width={width}
@@ -40,7 +39,7 @@ function PlusSvg({ width, height, color }: PlusSvgProps) {
           y2="200"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={color} />
+          <stop stopColor={'currentColor'} />
         </linearGradient>
         <clipPath id="clip0_2_713">
           <rect width="200" height="200" fill="white" />

@@ -1,7 +1,5 @@
-import React from 'react';
 interface SiteLogoProps {
   logo: string;
-
   height?: string;
 }
 

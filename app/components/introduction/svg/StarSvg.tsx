@@ -2,9 +2,8 @@ import React from 'react';
 interface StarSvgProps {
   width: string;
   height: string;
-  color: string;
 }
-function StarSvg({ width, height, color }: StarSvgProps) {
+function StarSvg({ width, height }: StarSvgProps) {
   return (
     <svg
       width={width}
@@ -42,7 +41,7 @@ function StarSvg({ width, height, color }: StarSvgProps) {
           y2="179.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor={color} />
+          <stop stopColor={'currentColor'} />
         </linearGradient>
         <clipPath id="clip0_2_815">
           <rect width="200" height="200" fill="white" />

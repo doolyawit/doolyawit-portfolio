@@ -1,4 +1,3 @@
-import React from 'react';
 import NameAndPosition from './NameAndPosition';
 import HireMe from './HireMe';
 

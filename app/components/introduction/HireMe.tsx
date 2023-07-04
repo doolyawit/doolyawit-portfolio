@@ -1,4 +1,3 @@
-import React from 'react';
 import HireMeButton from './HireMeButton';
 
 function HireMe() {

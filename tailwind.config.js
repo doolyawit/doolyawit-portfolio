@@ -1,5 +1,7 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -22,24 +24,26 @@ module.exports = {
       colors: {
         transparent: 'transparent',
         gray: '#1b1b1b',
-        white: '##fffef5',
-        yellow: '##ffda58',
+        beige: '#fffef5',
+        yellow: '#ffda58',
         green: '#14D87A',
         orange: '#f36336',
       },
       fontFamily: {
-        jk: ['var(--font-jakarta)', 'sans-serif'],
-        st: ['var(--font-satoshi)', 'sans-serif'],
+        jk: ['Plus Jakarta Sans', 'sans-serif'],
+        st: ['Satoshi', 'sans-serif'],
       },
       fontSize: {
         caption: ['20px', '19.4px'],
         menu: ['19px', '18.43px'],
         body: ['20px', '24px'],
         title: ['39.1px', '37.92px'],
-        head2: ['61px', '59.17px'],
+        head2: ['61px', '59.2088px'],
         head1: ['76.3px', '74px'],
       },
     },
   },
   plugins: [],
 };
+
+module.exports = config;

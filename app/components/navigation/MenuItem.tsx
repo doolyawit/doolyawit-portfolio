@@ -24,7 +24,7 @@ const Menu: React.FC<Props> = ({ menuItems, height }) => {
             <HoverLineSvg
               width="70"
               height="16"
-              className="invisible mx-auto text-green group-hover:visible dark:text-yellow"
+              className="invisible mx-auto text-yellow group-hover:visible dark:text-green"
             />
           </div>
         ))}

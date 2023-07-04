@@ -12,7 +12,7 @@ function NameAndPosition() {
       </div>
       <div className="absolute left-[340px] top-[220px] z-50 ">
         <StarSvg
-          color={theme ? '#14D87A' : '#f36336'}
+          color={theme === 'dark' ? '#14D87A' : '#f36336'}
           width="56.06"
           height="58.48"
         />

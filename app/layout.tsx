@@ -1,7 +1,7 @@
 import 'app/globals.css';
-import { jakarta, satoshi } from './font';
-import React, { useContext } from 'react';
-import { ThemeContext, ThemeProvider } from '@/contexts/ThemeContext';
+import { jakarta, satoshi } from './fonts';
+import React from 'react';
+import { ThemeProvider } from '@/contexts/ThemeContext';
 
 export const metadata = {
   title: `dY's Portfolio`,

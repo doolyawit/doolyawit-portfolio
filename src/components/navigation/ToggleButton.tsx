@@ -9,7 +9,7 @@ function ToggleButton() {
     //transition smooth
     <div
       className={`flex flex-1 shrink grow basis-0 justify-center gap-2.5 self-center ${
-        theme ? 'dark' : ''
+        theme === 'dark' ? 'dark' : ''
       }`}
     >
       <div

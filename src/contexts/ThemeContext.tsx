@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 
 interface ThemeContextProps {
-  theme: boolean;
+  theme: string;
   toggleTheme: () => void;
 }
 export const ThemeContext = React.createContext<ThemeContextProps>(
@@ -10,11 +10,15 @@ export const ThemeContext = React.createContext<ThemeContextProps>(
 );
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(() => {
+    const storedTheme = localStorage.getItem('theme');
+    return storedTheme ? storedTheme : 'light';
+  });
 
   const toggleTheme = () => {
-    setTheme(!theme);
-    localStorage.setItem('theme', theme ? 'light' : 'dark');
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   };
 
   return (

@@ -8,7 +8,7 @@ import { ThemeContext } from '@/contexts/ThemeContext';
 export default function Home() {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className={`${theme ? 'dark' : ''}`}>
+    <div className={`${theme === 'dark' ? 'dark' : ''}`}>
       <NavBar />
       <Introduction />
     </div>

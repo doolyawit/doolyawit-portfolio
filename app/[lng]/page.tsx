@@ -7,7 +7,8 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
   return (
     <div>
       {/* landing section */}
-      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4">
+
+      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="home">
         <NavBar lng={lng} />
         <Introduction lng={lng} />
       </div>

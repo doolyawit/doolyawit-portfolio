@@ -8,10 +8,10 @@ export default async function NavBar({ lng }: BaseProp) {
   const { t } = await useTranslation(lng);
 
   const menuItems = [
-    { label: t('nav_bar.home'), link: '/' },
-    { label: t('nav_bar.about_me'), link: '#about' },
-    { label: t('nav_bar.project'), link: '#projects' },
-    { label: t('nav_bar.contact'), link: '#contact' },
+    { label: t('nav_bar.home'), link: '#' },
+    { label: t('nav_bar.about_me'), link: 'about' },
+    { label: t('nav_bar.project'), link: 'projects' },
+    { label: t('nav_bar.contact'), link: 'contact' },
   ];
 
   return (

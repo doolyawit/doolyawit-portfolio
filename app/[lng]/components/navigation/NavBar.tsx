@@ -17,7 +17,7 @@ export default async function NavBar({ lng }: BaseProp) {
   return (
     <div
       className={
-        'fixed left-0 right-0 top-0 z-50 inline-flex h-fit w-screen items-center justify-center gap-4 bg-beige p-4 dark:bg-gray'
+        'fixed left-0 right-0 top-0 z-50 col-span-12 col-start-1 row-span-1 row-start-1 inline-flex h-fit w-screen items-center justify-center gap-4 bg-beige px-8 py-4 dark:bg-gray'
       }
     >
       <SiteLogo textLogo="dY." height="106" />

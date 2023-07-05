@@ -1,18 +1,22 @@
-import Information from './Information';
+import Description from './Description';
+import Name from './Name';
 import ProfilePhoto from './ProfilePhoto';
 import Skills from './Skills';
 
 function AboutMe() {
   return (
-    <div id="about" className="grid h-screen w-screen grid-cols-12 grid-rows-4 ">
+    <div className="col-span-10 col-start-2 row-span-3 row-start-2 flex h-full w-full flex-col gap-10">
       {/* TODO : fix photo size */}
-      <div className="col-span-4 col-start-2 row-span-2 row-start-2 text-orange dark:text-green">
-        <ProfilePhoto />
+      <div className="flex h-2/3 w-full gap-4">
+        <div className="h-full  w-1/2 text-orange dark:text-green">
+          <ProfilePhoto />
+        </div>
+        <div className="h-full w-1/2">
+          <Name />
+          <Description />
+        </div>
       </div>
-      <div className="col-span-6 col-start-6 row-span-2 row-start-2 grid grid-cols-6 grid-rows-2 p-[16px]">
-        <Information />
-      </div>
-      <div className="col-span-10 col-start-2 row-span-1 row-start-4">
+      <div className="h-1/3 w-full">
         <Skills />
       </div>
     </div>

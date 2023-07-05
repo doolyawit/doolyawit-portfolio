@@ -15,12 +15,17 @@
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "accept-language": "3.0.18",
     "eslint-config-next": "13.4.7",
     "husky": "^8.0.3",
+    "i18next": "23.2.6",
+    "i18next-browser-languagedetector": "7.1.0",
+    "i18next-resources-to-backend": "1.1.4",
     "next": "13.4.7",
     "next-themes": "0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-i18next": "13.0.1",
     "typescript": "5.1.6"
   },
   "devDependencies": {

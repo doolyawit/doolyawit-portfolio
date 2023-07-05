@@ -9,7 +9,11 @@ import AboutMe from './components/about-me/AboutMe';
 export default function Home() {
   const { theme } = useTheme();
   return (
-    <div className={`${theme === 'dark' ? 'dark' : 'light'}`}>
+    <div
+      className={`${
+        theme === 'dark' ? 'dark' : 'light'
+      } grid grid-cols-12 grid-rows-4`}
+    >
       <NavBar />
       <Introduction />
       <AboutMe />

@@ -1,4 +1,3 @@
-import React from 'react';
 interface StarSvgProps {
   width: string;
   height: string;

@@ -1,6 +1,8 @@
-import Link from 'next/link';
+'use client';
+
 import NavMenuItem, { MenuItem } from './NavMenuItem';
 import NavClientMenuItem from './NavClientMenuItem';
+import { Link } from 'react-scroll';
 
 interface Props {
   menuItems: MenuItem[];
@@ -15,7 +17,7 @@ export default function NavMenu({ menuItems, height }: Props) {
           return <NavClientMenuItem key={index} item={item} />;
         }
         return (
-          <Link key={index} href={item.link}>
+          <Link key={index} to={item.link} spy={true} smooth={true} offset={50} duration={500}>
             <NavMenuItem item={item} />
           </Link>
         );

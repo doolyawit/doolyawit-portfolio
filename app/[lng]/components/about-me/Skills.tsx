@@ -3,7 +3,7 @@ import SkillsIcon from './SkillsIcon';
 
 function Skills() {
   return (
-    <div>
+    <div className="mb-8 mt-4">
       <SkillsLabel />
       <SkillsIcon />
     </div>

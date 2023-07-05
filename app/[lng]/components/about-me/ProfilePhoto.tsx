@@ -1,12 +1,12 @@
 function ProfilePhoto() {
+  //TODO: fix photo sizing and align
   return (
     <svg
-      width="full"
-      height="full"
-      viewBox="0 0 414 456"
+      viewBox="0 0 ful full"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      className="h-full w-full"
     >
       <g clipPath="url(#clip0_313_2334)">
         <rect width="414" height="456" fill={'currentColor'} />

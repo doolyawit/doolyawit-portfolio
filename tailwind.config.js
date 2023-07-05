@@ -36,7 +36,7 @@ const config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('@downwindcss/text-decoration')],
 };
 
 module.exports = config;

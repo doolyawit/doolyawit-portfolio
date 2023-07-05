@@ -7,14 +7,14 @@ export default async function NameAndPosition({ lng }: BaseProp) {
   const { t } = await useTranslation(lng);
 
   return (
-    <div>
-      <div className="col-span-10 row-span-3 grid grid-cols-10 grid-rows-3">
+    <div className="flex h-full flex-col">
+      <div className="flex-1 justify-start">
         <Position greetingWord={t('greeting')} position={t('front_end')} department={t('developer')} />
       </div>
-      <div className="absolute left-[340px] top-[220px] z-40 text-orange dark:text-green">
+      <div className="absolute left-1/3 top-1/3 z-40 text-orange dark:text-green">
         <StarSvg width="58" height="58" />
       </div>
-      <div className="col-span-10 col-start-1 row-span-1 flex h-[218px] w-[1064px] items-center justify-center text-center font-jk text-head1 font-extrabold text-gray dark:text-beige">
+      <div className="flex h-full w-full items-center justify-center font-jk text-head1 font-extrabold text-gray dark:text-beige">
         {t('doolyawit_yodkaew')}
       </div>
     </div>

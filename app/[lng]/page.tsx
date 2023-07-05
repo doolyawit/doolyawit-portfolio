@@ -5,10 +5,16 @@ import AboutMe from './components/about-me/AboutMe';
 
 export default async function HomePage({ params: { lng } }: ParamLanguage) {
   return (
-    <div className="grid grid-cols-12 grid-rows-4">
-      <NavBar lng={lng} />
-      <Introduction lng={lng} />
-      <AboutMe />
+    <div className="overflow-x-hidden">
+      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="home">
+        <NavBar lng={lng} />
+        <Introduction lng={lng} />
+      </div>
+      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="about">
+        <AboutMe />
+      </div>
+      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="projects"></div>
+      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="contact"></div>
     </div>
   );
 }

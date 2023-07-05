@@ -1,6 +1,6 @@
 function SkillsIcon() {
   return (
-    <div className="flex flex-row items-center justify-center gap-20 px-2 pb-8 pt-8">
+    <div className="flex flex-row items-center justify-center gap-20 px-2 pb-8 pt-4">
       {/* //JS  */}
       <svg width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Group 68">

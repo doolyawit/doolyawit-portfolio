@@ -1,7 +1,7 @@
 function SkillsLabel() {
   return (
     <>
-      <div className="mb-2 text-center font-st text-title font-medium">Skill</div>
+      <div className="mb-2 text-center font-st text-3xl font-normal">Skills</div>
       <div className="flex content-center justify-center text-orange dark:text-green">
         <svg width="105" height="6" viewBox="0 0 105 6" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path

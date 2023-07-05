@@ -1,8 +1,8 @@
 'use client';
+
 import NavMenuItem, { MenuItem } from './NavMenuItem';
 import NavClientMenuItem from './NavClientMenuItem';
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 interface Props {
   menuItems: MenuItem[];

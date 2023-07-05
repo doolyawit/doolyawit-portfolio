@@ -1,4 +1,4 @@
-import Menu from './MenuItem';
+import NavMenu from './NavMenu';
 import ToggleButton from './ToggleButton';
 import SiteLogo from './SiteLogo';
 import { useTranslation } from '../../../i18n';
@@ -16,9 +16,9 @@ export default async function NavBar({ lng }: BaseProp) {
 
   return (
     <div className={'inline-flex h-[138px] w-screen items-center justify-center gap-4 bg-beige p-4 dark:bg-gray'}>
-      <SiteLogo logo="dY." height="106" />
+      <SiteLogo textLogo="dY." height="106" />
       <ToggleButton />
-      <Menu menuItems={menuItems} height="72" />
+      <NavMenu menuItems={menuItems} height="72" />
     </div>
   );
 }

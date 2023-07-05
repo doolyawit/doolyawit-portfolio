@@ -3,7 +3,7 @@ version: "3.9"
 services:
   app:
     build:
-      context: ./
-      dockerfile: Dockerfile
+      context: ..
+      dockerfile: docker/Dockerfile
     ports:
       - 3001:3000

@@ -15,7 +15,11 @@ export default async function NavBar({ lng }: BaseProp) {
   ];
 
   return (
-    <div className={'inline-flex h-[138px] w-screen items-center justify-center gap-4 bg-beige p-4 dark:bg-gray'}>
+    <div
+      className={
+        'fixed left-0 right-0 top-0 z-50 inline-flex h-fit w-screen items-center justify-center gap-4 bg-beige p-4 dark:bg-gray'
+      }
+    >
       <SiteLogo textLogo="dY." height="106" />
       <ToggleButton />
       <NavMenu menuItems={menuItems} height="72" />

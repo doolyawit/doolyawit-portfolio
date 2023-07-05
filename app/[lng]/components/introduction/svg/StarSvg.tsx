@@ -1,8 +1,8 @@
-import React from 'react';
 interface StarSvgProps {
   width: string;
   height: string;
 }
+
 function StarSvg({ width, height }: StarSvgProps) {
   return (
     <svg width={width} height={height} viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -2,9 +2,6 @@
 User-agent: *
 Allow: /
 
-User-agent: *
-Allow: /banner.png
-
 # Host
 Host: https://diwx.20cnx.xyz/
 

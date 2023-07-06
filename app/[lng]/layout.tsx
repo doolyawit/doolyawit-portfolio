@@ -17,17 +17,13 @@ export const metadata: Metadata = {
     type: 'profile',
     description: 'Doolyawit Yodkaew Portfolio',
     url: 'https://diwx.20cnx.xyz',
-    images: [
-      'https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top',
-    ],
+    images: ['https://res.cloudinary.com/dnzxtb7ch/image/upload/v1688663038/banner_acj8cc.png'],
   },
   twitter: {
     title: "dY's Portfolio",
     card: 'summary_large_image',
     description: 'Doolyawit Yodkaew Portfolio',
-    images: [
-      'https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top',
-    ],
+    images: ['https://res.cloudinary.com/dnzxtb7ch/image/upload/v1688663038/banner_acj8cc.png'],
   },
 };
 

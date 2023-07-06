@@ -1,15 +1,13 @@
-'use client';
+import { PersonalInformation } from '../../constants';
+import ExternalLink from '../ExternalLink';
 
 function Email() {
   return (
-    <div
-      className="flex h-full w-full cursor-pointer items-center justify-center font-jk text-6xl font-extrabold "
-      onClick={() => {
-        window.open('mailto:dew.doolyawit@gmail.com');
-      }}
-    >
-      dew.doolyawit@gmail.com
-    </div>
+    <ExternalLink
+      className={'flex h-full w-full cursor-pointer items-center justify-center font-jk text-6xl font-extrabold'}
+      label={PersonalInformation.EMAIL}
+      link={`mailto:${PersonalInformation.EMAIL}`}
+    />
   );
 }
 

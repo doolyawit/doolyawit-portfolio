@@ -10,7 +10,7 @@ export default async function ContactNavBar() {
   ];
 
   return (
-    <div className="flex h-full w-full items-end ">
+    <div className="flex items-end">
       <ContactMenuItem menuItems={menuItems} />
     </div>
   );

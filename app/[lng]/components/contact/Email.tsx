@@ -1,5 +1,5 @@
 import { PersonalInformation } from '../../constants';
-import ExternalLink from '../ExternalLink';
+import ExternalLink from '../external-link';
 
 function Email() {
   return (

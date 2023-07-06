@@ -2,6 +2,7 @@ import NavBar from './components/navigation/NavBar';
 import Introduction from './components/introduction/Introduction';
 import { ParamLanguage } from '../types';
 import AboutMe from './components/about-me/AboutMe';
+import Contact from './components/contact/Contact';
 
 export default async function HomePage({ params: { lng } }: ParamLanguage) {
   return (
@@ -14,7 +15,9 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
         <AboutMe />
       </div>
       <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="projects"></div>
-      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="contact"></div>
+      <div className="relative grid h-screen w-screen grid-cols-12 grid-rows-4" id="contact">
+        <Contact />
+      </div>
     </div>
   );
 }

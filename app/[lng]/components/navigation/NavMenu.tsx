@@ -17,7 +17,7 @@ export default function NavMenu({ menuItems, height }: Props) {
           return <NavClientMenuItem key={index} item={item} />;
         }
         return (
-          <Link key={index} to={item.link} spy={true} smooth={true} offset={50} duration={500}>
+          <Link href="#" key={index} to={item.link} spy={true} smooth={true} offset={50} duration={500}>
             <NavMenuItem item={item} />
           </Link>
         );

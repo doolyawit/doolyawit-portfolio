@@ -1,4 +1,4 @@
-import ExternalLink from '../ExternalLink';
+import ExternalLink from '../external-link';
 import { MenuItem } from '../navigation/NavMenuItem';
 import Underline from './svg/Underline';
 

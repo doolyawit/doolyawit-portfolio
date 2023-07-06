@@ -1,7 +1,7 @@
 function SkillsIcon() {
   return (
     <div className="flex flex-row items-center justify-center gap-20 px-2 pb-8 pt-4">
-      {/* //JS  */}
+      {/* JS  */}
       <svg width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Group 68">
           <path
@@ -19,7 +19,7 @@ function SkillsIcon() {
         </g>
       </svg>
 
-      {/* //TS */}
+      {/* TS */}
       <svg width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Group 44">
           <path
@@ -36,7 +36,8 @@ function SkillsIcon() {
           />
         </g>
       </svg>
-      {/* html */}
+
+      {/* HTML */}
       <svg width="37" height="39" viewBox="0 0 37 39" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="html5">
           <path
@@ -100,6 +101,7 @@ function SkillsIcon() {
           </g>
         </g>
       </svg>
+
       {/* Angular */}
       <svg width="36" height="40" viewBox="0 0 36 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Group 52">
@@ -123,6 +125,7 @@ function SkillsIcon() {
           />
         </g>
       </svg>
+
       {/* Tailwind */}
       <svg width="38" height="22" viewBox="0 0 38 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -132,7 +135,8 @@ function SkillsIcon() {
           fill={'currentColor'}
         />
       </svg>
-      {/* Php */}
+
+      {/* PHP */}
       <svg width="57" height="40" viewBox="0 0 57 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Group 63">
           <path
@@ -161,6 +165,7 @@ function SkillsIcon() {
           />
         </g>
       </svg>
+
       {/* Python */}
       <svg width="38" height="40" viewBox="0 0 38 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="Group 62">

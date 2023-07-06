@@ -6,6 +6,7 @@ import NavMenuItem, { MenuItem } from './NavMenuItem';
 export default function NavClientMenuItem({ item }: { item: MenuItem }) {
   return (
     <Link
+      href="#"
       className="cursor-pointer"
       onClick={() => {
         window.location.hash = '';

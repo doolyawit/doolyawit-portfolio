@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Description() {
   return (
     <div className="h-1/2 text-justify font-st text-body font-thin">

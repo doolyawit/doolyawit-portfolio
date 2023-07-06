@@ -1,8 +1,8 @@
 'use client';
 
 import { useTheme } from 'next-themes';
-import SunIcon from './svg/SunToggle';
-import MoonIcon from './svg/MoonToggle';
+import SunIcon from './svg/sun.svg';
+import MoonIcon from './svg/moon.svg';
 
 function ToggleButton() {
   const { theme, setTheme } = useTheme();

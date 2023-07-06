@@ -17,7 +17,7 @@ export const metadata = {
 export default async function RootLayout({ children, params: { lng } }: ParamLanguage & { children: React.ReactNode }) {
   return (
     <html lang={lng} dir={dir(lng)} suppressHydrationWarning>
-      <body className={`${satoshi.variable}`}>
+      <body className={`${satoshi.variable} transition-colors duration-300`}>
         <NextThemeProvider>{children}</NextThemeProvider>
       </body>
     </html>

@@ -7,7 +7,7 @@ export interface MenuItem {
 
 export default function NavMenuItem({ item }: { item: MenuItem }) {
   return (
-    <div className="flex items-center justify-center space-x-4 pt-4">
+    <div className="flex cursor-pointer items-center justify-center space-x-4 pt-4">
       <div className="group h-10 w-[90px] text-center font-jk text-menu font-medium text-gray dark:text-beige">
         <p>{item.label}</p>
         <HoverLineSvg

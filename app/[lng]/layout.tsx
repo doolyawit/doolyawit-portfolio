@@ -11,17 +11,23 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-  title: `dY's Portfolio`,
+  title: "dY's Portfolio",
   description: 'Doolyawit Yodkaew Portfolio',
   openGraph: {
     type: 'profile',
     description: 'Doolyawit Yodkaew Portfolio',
     url: 'https://diwx.20cnx.xyz',
-    images: ['https://diwx.20cnx.xyz/banner.png'],
+    images: [
+      'https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top',
+    ],
   },
   twitter: {
+    title: "dY's Portfolio",
+    card: 'summary_large_image',
     description: 'Doolyawit Yodkaew Portfolio',
-    images: ['https://diwx.20cnx.xyz/banner.png'],
+    images: [
+      'https://hips.hearstapps.com/hmg-prod/images/beautiful-smooth-haired-red-cat-lies-on-the-sofa-royalty-free-image-1678488026.jpg?crop=1xw:0.84415xh;center,top',
+    ],
   },
 };
 

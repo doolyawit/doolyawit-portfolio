@@ -15,11 +15,11 @@ function ToggleButton() {
           setTheme(theme === 'dark' ? 'light' : 'dark');
         }}
       >
-        <div className="z-10 flex w-[90px] items-center justify-between rounded-[100px] border border-gray px-[5px] py-[5.1px] transition-colors duration-300 dark:border-beige">
-          <div className="-z-[1] translate-y-0 opacity-100 transition-all delay-200 duration-300 ease-in dark:translate-y-[10px] dark:opacity-0 dark:delay-0 dark:ease-out">
+        <div className="z-1 flex w-[86px] items-center justify-between rounded-[100px] border border-gray px-[5px] py-[5.1px] transition-colors duration-300 dark:border-beige">
+          <div className="-z-[1] translate-y-0 opacity-100 transition-all delay-200 duration-300 ease-in dark:translate-y-[10px] dark:opacity-0 dark:delay-200 dark:ease-out">
             <SunIcon />
           </div>
-          <div className="-z-[1] -translate-y-[10px] opacity-0 transition-all delay-0 duration-300 ease-out dark:translate-y-0 dark:opacity-100 dark:delay-200 dark:ease-in">
+          <div className="-z-[1] -translate-y-[10px] -rotate-45 opacity-0 transition-all delay-200 duration-300 ease-out dark:translate-y-0 dark:rotate-[16] dark:opacity-100 dark:delay-200 dark:ease-in">
             <MoonIcon />
           </div>
         </div>

@@ -1,0 +1,14 @@
+{
+  "nav_bar": {
+    "home": "โฮม",
+    "about_me": "เกี่ยวกับฉัน",
+    "project": "โปรเจกต์",
+    "contact": "ติดต่อฉัน"
+  },
+  "greeting": "เฮ้ !",
+  "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nulla mauris. Donec ornare nibh eget risus interdum, sit amet pellentesque tellus dignissim. Sed bibendum tellus odio, a sodales massa ullamcorperut.",
+  "hire_me": "พูดคุย",
+  "doolyawit_yodkaew": "ดุลยวิทย์ ยอดแก้ว",
+  "front_end": "หน้าบ้าน",
+  "developer": "นักพัฒนา"
+}

@@ -9,6 +9,7 @@ const config = {
         md: '768px',
         lg: '1024px',
         xl: '1280px',
+        '3xl': '2560px',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

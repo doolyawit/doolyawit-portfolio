@@ -16,7 +16,7 @@ function AboutMe() {
           <Description />
         </div>
       </div>
-      <div className="h-1/3 w-full">
+      <div className="mt-2 h-1/3 w-full">
         <Skills />
       </div>
     </div>

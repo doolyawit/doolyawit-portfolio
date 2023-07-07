@@ -15,7 +15,7 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
       <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="about">
         <AboutMe />
       </div>
-      <div className="flex h-fit w-screen pt-48" id="projects">
+      <div className="flex h-fit w-screen px-10 pt-48" id="projects">
         <Projects />
       </div>
       <div className="relative grid h-screen w-screen grid-cols-12 grid-rows-4" id="contact">

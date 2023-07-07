@@ -7,25 +7,30 @@ function ProjectCard({ projects }: { projects: Project[] }): React.ReactNode {
     projects &&
     projects.map((project, index) => {
       return (
-        <div className="flex w-full gap-2 border-b py-4" key={index}>
-          <div className="flex w-1/2 flex-col justify-between">
-            <div className="text-jk text-4xl font-semibold">
-              {`${project.number} /`} <br />
-              {project.name}
+        <div className="w-full border-b py-0" key={index}>
+          <div className="mt-5 flex">
+            <div className="flex w-1/2 flex-col justify-between pb-5">
+              <div className="text-jk text-4xl font-semibold">
+                {`${project.number} /`} <br />
+                {project.name}
+              </div>
+              <div className="text-st w-2/3 break-words text-justify text-base font-extralight">
+                {project.description}
+              </div>
+              <div>
+                <ExternalLink label="Learn More &#8599;" link={project.link} className="text-base font-normal" />
+              </div>
             </div>
-            <div className="text-st w-2/3 text-justify text-caption font-extralight">{project.description}</div>
-            <div>
-              <ExternalLink label="Learn More &#8599;" link={project.link} className="font-jk text-xl font-normal" />
+            <div className="w-1/2">
+              <Image
+                src={project.photoUrl}
+                alt={project.name}
+                width={700}
+                height={900}
+                style={{ objectFit: 'fill' }}
+                className="h-full w-full rounded-t-sm drop-shadow-md"
+              />
             </div>
-          </div>
-          <div className="w-1/2">
-            <Image
-              src={project.photoUrl}
-              alt={project.name}
-              width={700}
-              height={900}
-              className="h-full w-full rounded-2xl border object-fill drop-shadow-md"
-            />
           </div>
         </div>
       );

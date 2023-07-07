@@ -4,11 +4,8 @@ import { BaseProp } from '../../../types';
 
 function Introduction({ lng }: BaseProp) {
   return (
-    <div className="col-span-10 col-start-2 row-span-3 row-start-2 flex h-full w-full flex-col pb-6">
-      <div className="relative h-full w-full">
-        {' '}
-        <NameAndPosition lng={lng} />
-      </div>
+    <div className="w-full snap-center">
+      <NameAndPosition lng={lng} />
       <div className="text-center">
         <HireMe lng={lng} />
       </div>

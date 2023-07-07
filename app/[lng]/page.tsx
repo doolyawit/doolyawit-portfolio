@@ -7,18 +7,26 @@ import Projects from './components/projects/project/Projects';
 
 export default async function HomePage({ params: { lng } }: ParamLanguage) {
   return (
-    <div className="flex flex-col overflow-x-hidden">
-      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="home">
-        <NavBar lng={lng} />
-        <Introduction lng={lng} />
+    <div className="inline-block h-full w-full">
+      <div className="flex h-full w-full items-center justify-center overflow-x-hidden">
+        <div className="max-w-7xl justify-center">
+          <NavBar lng={lng} />
+          <div className="h-full w-full px-[80px]">
+            <div id="home" className="flex h-screen w-full 2xl:h-[860px]">
+              <div className="h-full w-full pt-[140px]">
+                <Introduction lng={lng} />
+              </div>
+            </div>
+            <div className="flex h-fit w-full 2xl:h-[720px]" id="about">
+              <AboutMe />
+            </div>
+            <div className="flex h-fit w-full" id="projects">
+              <Projects />
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="grid h-screen w-screen grid-cols-12 grid-rows-4" id="about">
-        <AboutMe />
-      </div>
-      <div className="flex h-fit w-screen px-10 pt-48" id="projects">
-        <Projects />
-      </div>
-      <div className="relative grid h-screen w-screen grid-cols-12 grid-rows-4" id="contact">
+      <div className="flex h-fit w-full items-center justify-center" id="contact">
         <Contact />
       </div>
     </div>

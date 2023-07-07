@@ -7,24 +7,24 @@ function ProjectCard({ projects }: { projects: Project[] }): React.ReactNode {
     projects &&
     projects.map((project, index) => {
       return (
-        <div className="flex h-2/3 w-full gap-2 border-b py-4" key={index}>
-          <div className="flex h-full w-1/2 flex-col justify-between">
+        <div className="flex w-full gap-2 border-b py-4" key={index}>
+          <div className="flex w-1/2 flex-col justify-between">
             <div className="text-jk text-4xl font-semibold">
               {`${project.number} /`} <br />
               {project.name}
             </div>
-            <div className="text-st w-2/3 text-justify text-caption font-light">{project.description}</div>
+            <div className="text-st w-2/3 text-justify text-caption font-extralight">{project.description}</div>
             <div>
-              <ExternalLink label="Learn More &#8599;" link={project.link} className="font-jk text-xl font-medium" />
+              <ExternalLink label="Learn More &#8599;" link={project.link} className="font-jk text-xl font-normal" />
             </div>
           </div>
-          <div className="h-full w-1/2">
+          <div className="w-1/2">
             <Image
               src={project.photoUrl}
               alt={project.name}
-              width={900}
+              width={700}
               height={900}
-              className="h-full w-full rounded-2xl object-fill"
+              className="h-full w-full rounded-2xl border object-fill drop-shadow-md"
             />
           </div>
         </div>

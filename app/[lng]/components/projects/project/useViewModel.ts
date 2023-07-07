@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Project, ProjectRepositoryAble } from '../../../services/datasources/interface/project';
-import { ProjectRepository } from '../../../services/project';
-import ProjectServiceMock from '../../../services/datasources/mock/project';
+import { ProjectService } from '../../../services/project';
+import ProjectMockRepository from '../../../services/datasources/mock/project';
 
 const useViewModel = () => {
   const [projects, setProjects] = useState<Project[]>([]);
 
   const projectRepo: ProjectRepositoryAble = useMemo(() => {
-    return new ProjectRepository(new ProjectServiceMock());
+    return new ProjectService(new ProjectMockRepository());
   }, []);
 
   useEffect(() => {

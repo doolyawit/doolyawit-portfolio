@@ -6,7 +6,7 @@ import { Glass } from './svg/Glass';
 
 function Contact() {
   return (
-    <div className="col-span-10 col-start-2 row-span-3 row-start-2 flex h-full w-full flex-col">
+    <div className="col-span-10 col-start-2 row-span-3 row-start-2 flex h-full w-full flex-col selection:bg-green dark:selection:bg-orange">
       <div className="relative mb-[70px] h-1/3 w-full 2xl:mb-0">
         <div className="absolute left-[7%] 2xl:left-[18%] 3xl:left-[26%]">
           <GetInTouchGraphics />

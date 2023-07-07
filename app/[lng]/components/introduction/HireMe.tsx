@@ -5,7 +5,7 @@ import HireMeButton from './HireMeButton';
 export default async function HireMe({ lng }: BaseProp) {
   const { t } = await useTranslation(lng);
   return (
-    <div className="mb-8">
+    <div className="mb-8 selection:bg-green dark:selection:bg-orange">
       <p className="mb-4 px-48 py-2 text-center font-st text-body font-normal text-gray dark:text-beige">
         {t('lorem')}
       </p>

@@ -1,7 +1,7 @@
 import { Observable, of } from 'rxjs';
 import { Project, ProjectServiceAble } from '../interface/project';
 
-class ProjectServiceMock implements ProjectServiceAble {
+class ProjectMockRepository implements ProjectServiceAble {
   reqGetProjects(): Observable<Project[]> {
     return of([
       {
@@ -43,4 +43,4 @@ class ProjectServiceMock implements ProjectServiceAble {
   }
 }
 
-export default ProjectServiceMock;
+export default ProjectMockRepository;

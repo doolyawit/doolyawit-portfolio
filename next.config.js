@@ -17,6 +17,11 @@ const nextConfig = {
         hostname: 'cdn.discordapp.com',
         port: '',
       },
+      {
+        protocol: 'https',
+        hostname: 'strapi-development-storage.s3.ap-southeast-1.amazonaws.com',
+        port: '',
+      },
     ],
   },
 };

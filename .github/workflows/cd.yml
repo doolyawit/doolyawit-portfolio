@@ -24,7 +24,7 @@ jobs:
           node-version: 18.16.x
           registry-url: 'https://npm.pkg.github.com'
       - name: Build Image
-        run: docker image build --no-cache --tag registry.digitalocean.com/poc-20scoops/diwx-landing:latest --file ./docker/Dockerfile .
+        run: docker image build --no-cache --tag registry.digitalocean.com/poc-20scoops/diwx-landing:latest --file ./docker/Dockerfile --build-arg STRAPI_API_TOKEN=${{ secrets.STRAPI_API_TOKEN }} .
       - name: Push Image
         if: success()
         run: |

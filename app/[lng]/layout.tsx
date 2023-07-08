@@ -11,6 +11,7 @@ export async function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://diwx.20cnx.xyz'),
   title: "dY's Portfolio",
   description: 'Doolyawit Yodkaew Portfolio',
   openGraph: {

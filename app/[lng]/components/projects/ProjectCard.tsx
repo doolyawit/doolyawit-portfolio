@@ -1,8 +1,11 @@
 import Image from 'next/image';
 import ExternalLink from '../external-link';
 import { Project } from '../../services/datasources/interface/project';
+import { useTranslation } from '../../../i18n';
 
-function ProjectCard({ projects }: { projects: Project[] }): React.ReactNode {
+export default async function ProjectCard({ lng, projects }: { lng: string; projects: Project[] }) {
+  const { t } = await useTranslation(lng);
+
   return (
     projects &&
     projects.map((project, index) => {
@@ -18,7 +21,7 @@ function ProjectCard({ projects }: { projects: Project[] }): React.ReactNode {
                 {project.description}
               </div>
               <div>
-                <ExternalLink label="Learn More &#8599;" link={project.link} className="text-base font-normal" />
+                <ExternalLink label={t('project.learn_more')} link={project.link} className="text-base font-normal" />
               </div>
             </div>
             <div className="w-1/2">
@@ -27,7 +30,7 @@ function ProjectCard({ projects }: { projects: Project[] }): React.ReactNode {
                 alt={project.name}
                 width={700}
                 height={900}
-                style={{ objectFit: 'fill' }}
+                style={{ objectFit: 'contain' }}
                 className="h-full w-full rounded-t-sm drop-shadow-md"
               />
             </div>
@@ -37,5 +40,3 @@ function ProjectCard({ projects }: { projects: Project[] }): React.ReactNode {
     })
   );
 }
-
-export default ProjectCard;

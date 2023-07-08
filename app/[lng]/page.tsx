@@ -7,7 +7,7 @@ import Projects from './components/projects/project/Projects';
 
 export default async function HomePage({ params: { lng } }: ParamLanguage) {
   return (
-    <div className="inline-block h-full w-full">
+    <div className="inline-block h-full w-full selection:bg-green dark:selection:bg-orange">
       <div className="flex h-full w-full items-center justify-center overflow-x-hidden">
         <div className="max-w-7xl justify-center">
           <NavBar lng={lng} />
@@ -18,16 +18,16 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
               </div>
             </div>
             <div className="flex h-fit w-full 2xl:h-[720px]" id="about">
-              <AboutMe />
+              <AboutMe lng={lng} />
             </div>
             <div className="flex h-fit w-full" id="projects">
-              <Projects />
+              <Projects lng={lng} />
             </div>
           </div>
         </div>
       </div>
       <div className="flex h-fit w-full items-center justify-center" id="contact">
-        <Contact />
+        <Contact lng={lng} />
       </div>
     </div>
   );

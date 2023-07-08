@@ -11,13 +11,21 @@ interface Props {
 
 export default function NavMenu({ menuItems, height }: Props) {
   return (
-    <div className={`flex h-[${height}px] w-1/3 flex-1 gap-2 p-4`}>
+    <div className={`flex h-[${height}px] flex-1 items-center justify-end`}>
       {menuItems.map((item, index) => {
         if (index === 0) {
           return <NavClientMenuItem key={index} item={item} />;
         }
         return (
-          <Link href="#" key={index} to={item.link} spy={true} smooth={true} offset={50} duration={500}>
+          <Link
+            href="#"
+            key={index}
+            to={item.link}
+            spy={true}
+            smooth={true}
+            offset={index === menuItems.length - 1 ? 0 : -160}
+            duration={500}
+          >
             <NavMenuItem item={item} />
           </Link>
         );

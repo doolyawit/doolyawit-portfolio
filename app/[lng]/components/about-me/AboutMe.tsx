@@ -5,18 +5,18 @@ import Skills from './Skills';
 
 function AboutMe() {
   return (
-    <div className="col-span-10 col-start-2 row-span-3 row-start-2 flex h-full w-full flex-col gap-10">
+    <div className="flex h-full w-full flex-col gap-10 selection:bg-green dark:selection:bg-orange">
       {/* TODO : fix photo size */}
-      <div className="flex h-2/3 w-full gap-4">
+      <div className="flex h-[456px] w-full gap-4">
         <div className="h-full w-1/2 text-orange dark:text-green">
-          <ProfilePhoto />
+          <ProfilePhoto style={{ height: '456px' }} />
         </div>
-        <div className="h-full w-1/2">
+        <div className="flex h-full w-1/2 flex-col justify-between">
           <Name />
           <Description />
         </div>
       </div>
-      <div className="h-1/3 w-full">
+      <div className="-mt-4 mb-4 h-1/2 w-full 2xl:mb-0 2xl:h-1/6">
         <Skills />
       </div>
     </div>

@@ -10,6 +10,15 @@ const nextConfig = {
 
     return config;
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.discordapp.com',
+        port: '',
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

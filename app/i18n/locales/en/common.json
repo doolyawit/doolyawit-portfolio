@@ -2,11 +2,11 @@
   "nav_bar": {
     "home": "Home",
     "about_me": "About Me",
-    "project": "Project",
+    "project": "Projects",
     "contact": "Contact"
   },
   "greeting": "hey,",
-  "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis nulla mauris. Donec ornare nibh eget risus interdum, sit amet pellentesque tellus dignissim. Sed bibendum tellus odio, a sodales massa ullamcorperut.",
+  "lorem": "Hello! I’m Doolyawit Yodkaew, a front-end developer from Chaing Mai, Thailand, passionate about creating memorable experiences.",
   "hire_me": "Hire Me",
   "doolyawit_yodkaew": "DOOLYAWIT YODKAEW",
   "front_end": "Front End",

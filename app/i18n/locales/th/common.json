@@ -10,5 +10,20 @@
   "hire_me": "พูดคุย",
   "doolyawit_yodkaew": "ดุลยวิทย์ ยอดแก้ว",
   "front_end": "หน้าบ้าน",
-  "developer": "นักพัฒนา"
+  "developer": "นักพัฒนา",
+  "about_me": {
+    "greeting": "Hi 👋 My name is Diw and",
+    "position": "I Front End",
+    "description_paragraph_1": "Welcome to my portfolio website! I'm Doolyawit Yodkaew, You can call me Diw. I am a passionate front-end developer working as an intern at 20Scoops CNX. With a deep love for technology and a keen eyes for design.",
+    "description_paragraph_2": "I strive to create visually stunning and user-friendly web applications. Through my dedication and drive, I aim to contribute innovative solutions that meet client needs and exceed their expectations. Join me on this exciting journey as we dive into the world of cutting-edge web development.",
+    "skill": "Skills"
+  },
+  "project": {
+    "title": "Projects",
+    "what_i_do": "What I do...",
+    "learn_more": "Learn More ↗"
+  },
+  "contact": {
+    "let_work_together": "Let's Work Together"
+  }
 }

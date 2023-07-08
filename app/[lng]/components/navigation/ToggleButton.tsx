@@ -3,6 +3,7 @@
 import { useTheme } from 'next-themes';
 import SunIcon from './svg/sun.svg';
 import MoonIcon from './svg/moon.svg';
+import { Theme } from '../../constants';
 
 function ToggleButton() {
   const { theme, setTheme } = useTheme();
@@ -12,7 +13,7 @@ function ToggleButton() {
       <div
         className="relative z-[1] flex h-[69.25px] w-1/3 cursor-pointer items-center justify-center"
         onClick={() => {
-          setTheme(theme === 'dark' ? 'light' : 'dark');
+          setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
         }}
       >
         <div className="z-1 flex w-[86px] items-center justify-between rounded-[100px] border border-gray px-[5px] py-[5.1px] transition-colors duration-300 dark:border-beige">

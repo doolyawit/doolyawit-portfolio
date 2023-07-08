@@ -1,6 +1,6 @@
 import ExternalLink from '../external-link';
 import { MenuItem } from '../navigation/NavMenuItem';
-import Underline from './svg/Underline';
+import Underline from './svg/underline.svg';
 
 interface Props {
   menuItems: MenuItem[];

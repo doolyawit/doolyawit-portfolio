@@ -1,17 +1,10 @@
+import { contacts } from '../../constants';
 import ContactMenuItem from './ContactMenuItem';
 
 export default async function ContactNavBar() {
-  const menuItems = [
-    { label: 'Github', link: 'https://github.com/doolyawit' },
-    { label: 'LinkedIn', link: 'https://www.linkedin.com/in/doolyawit-yodkaew' },
-    { label: 'Twitter', link: 'https://www.twitter.com' },
-    { label: 'Instagram', link: 'https://www.instagram.com/diwx/' },
-    { label: 'Email', link: 'mailto:dew.doolyawit@gmail.com' },
-  ];
-
   return (
     <div className="flex items-end">
-      <ContactMenuItem menuItems={menuItems} />
+      <ContactMenuItem menuItems={contacts} />
     </div>
   );
 }

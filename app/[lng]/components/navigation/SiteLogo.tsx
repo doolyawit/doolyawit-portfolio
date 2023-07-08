@@ -19,7 +19,7 @@ export default function SiteLogo({ textLogo = 'dY.', height }: SiteLogoProps) {
           scroller.scrollTo('home', {
             duration: 500,
             smooth: true,
-            offset: 50,
+            offset: 0,
           });
         }}
       >

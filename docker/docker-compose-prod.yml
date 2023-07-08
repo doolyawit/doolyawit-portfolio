@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  movie:
+  app:
     image: registry.digitalocean.com/poc-20scoops/diwx-landing:latest
     ports:
       - 3001:3000

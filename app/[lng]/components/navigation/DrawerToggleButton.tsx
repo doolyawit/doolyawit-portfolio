@@ -4,7 +4,7 @@ import FourDots from './svg/FourDots';
 function DrawerToggleButton() {
   const { toggleDrawer } = useDrawerMenu();
   return (
-    <div>
+    <div className="md:flex md:flex-1 md:justify-end">
       <div onClick={() => toggleDrawer()}>
         <FourDots style="h-10 w-10 cursor-pointer" />
       </div>

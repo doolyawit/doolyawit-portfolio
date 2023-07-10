@@ -11,7 +11,7 @@ function ToggleButton() {
   return (
     <div className={'flex flex-1 shrink grow basis-0 items-center justify-center gap-2.5 self-center'}>
       <div
-        className="relative z-[1] flex h-20 w-32 cursor-pointer items-center justify-center xl:h-[69.25px] xl:w-1/3"
+        className="relative z-[1] flex h-20 w-32 cursor-pointer items-center justify-center md:h-[69.25px] md:w-1/3"
         onClick={() => {
           setTheme(theme === Theme.DARK ? Theme.LIGHT : Theme.DARK);
         }}

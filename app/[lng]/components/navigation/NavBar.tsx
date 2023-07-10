@@ -4,7 +4,7 @@ import SiteLogo from './SiteLogo';
 import { useTranslation } from '../../../i18n';
 import { BaseProp } from '../../../types';
 import { TEXTS_LOGO } from '../../constants';
-import NavBarMobile from './NavBarMobile';
+import NavBarMobileAndTablet from './NavBarMobileAndTablet';
 
 export default async function NavBar({ lng }: BaseProp) {
   const { t } = await useTranslation(lng);
@@ -26,7 +26,7 @@ export default async function NavBar({ lng }: BaseProp) {
         </div>
       </div>
       <div className="fixed left-0 right-0 top-0 z-50 flex h-fit w-full items-center justify-center bg-beige px-8 py-4 transition-all duration-300 dark:bg-gray xl:hidden 2xl:hidden 3xl:hidden">
-        <NavBarMobile menuItems={menuItems} />
+        <NavBarMobileAndTablet menuItems={menuItems} />
       </div>
     </div>
   );

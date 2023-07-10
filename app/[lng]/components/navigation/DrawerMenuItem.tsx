@@ -5,7 +5,7 @@ import { useDrawerMenu } from '../../hooks/useDrawerMenu';
 function DrawerMenuItem({ menuItems }: { menuItems: MenuItem[] }) {
   const { toggleDrawer } = useDrawerMenu();
   return (
-    <div className="flex h-fit flex-col gap-12 text-center font-jk text-4xl font-semibold md:text-5xl lg:text-6xl">
+    <div className="flex h-fit flex-col gap-12 text-center font-jk text-4xl font-semibold md:text-5xl lg:gap-16 lg:text-6xl">
       {menuItems.map((item, index) => {
         if (index === 0) {
           return (

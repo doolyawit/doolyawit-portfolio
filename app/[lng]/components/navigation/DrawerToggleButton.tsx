@@ -6,7 +6,7 @@ function DrawerToggleButton() {
   return (
     <div className="md:flex md:flex-1 md:justify-end">
       <div onClick={() => toggleDrawer()}>
-        <FourDots style="h-10 w-10 cursor-pointer" />
+        <FourDots style="h-8 w-8 sm:h-10 sm:w-10 cursor-pointer" />
       </div>
     </div>
   );

@@ -16,18 +16,20 @@ function DrawerMenu({ menuItems }: { menuItems: MenuItem[] }) {
         }}
         classes={{
           paper:
-            'bg-beige dark:bg-gray text-gray dark:text-beige h-screen px-8 pb-16 pt-32 flex flex-col justify-between items-center gap-10 dark:selection:bg-orange selection:bg-green',
+            'bg-beige dark:bg-gray text-gray dark:text-beige h-screen px-8 pb-16 pt-32 md:pt-44 lg:pt-60 flex flex-col justify-between items-center gap-10 dark:selection:bg-orange selection:bg-green',
         }}
       >
         <div className="flex flex-col gap-7">
           <DrawerMenuItem menuItems={menuItems} />
-          <ToggleButton />
+          <div className="md:hidden">
+            <ToggleButton />
+          </div>
         </div>
         <div
           onClick={() => {
             toggleDrawer();
           }}
-          className="h-fit cursor-pointer text-5xl font-semibold"
+          className="h-fit cursor-pointer text-5xl font-semibold lg:text-6xl"
         >
           &#10005;
         </div>

@@ -4,6 +4,7 @@ import { BaseProp } from '../../../types';
 
 function Introduction({ lng }: BaseProp) {
   return (
+    //TODO: sm md lg of introduction
     <div className="w-full snap-center">
       <NameAndPosition lng={lng} />
       <div className="text-center">

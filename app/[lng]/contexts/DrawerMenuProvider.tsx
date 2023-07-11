@@ -8,6 +8,7 @@ interface DrawerMenuContextProps {
   toggleDrawer: () => void;
   anchor: 'top' | 'left' | 'bottom' | 'right';
 }
+
 export const DrawerMenuContext = createContext<DrawerMenuContextProps>({} as DrawerMenuContextProps);
 function DrawerMenuProvider({ children }: { children: React.ReactNode }) {
   const [drawerOpen, setDrawerOpen] = useState(false);

@@ -10,6 +10,7 @@ interface DrawerMenuContextProps {
 }
 
 export const DrawerMenuContext = createContext<DrawerMenuContextProps>({} as DrawerMenuContextProps);
+
 function DrawerMenuProvider({ children }: { children: React.ReactNode }) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const toggleDrawer = () => {

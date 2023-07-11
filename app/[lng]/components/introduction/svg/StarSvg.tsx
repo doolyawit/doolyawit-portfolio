@@ -1,11 +1,10 @@
 interface StarSvgProps {
-  width: string;
-  height: string;
+  className: string;
 }
 
-function StarSvg({ width, height }: StarSvgProps) {
+function StarSvg({ className }: StarSvgProps) {
   return (
-    <svg width={width} height={height} viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
       <g clipPath="url(#clip0_2_815)">
         <mask id="mask0_2_815" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
           <path d="M200 0H0V200H200V0Z" fill="white" />

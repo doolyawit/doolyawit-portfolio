@@ -10,13 +10,13 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
   return (
     <div className="inline-block h-full w-full selection:bg-green dark:selection:bg-orange">
       <div className="flex h-full w-full items-center justify-center overflow-x-hidden">
-        <div className="max-w-7xl justify-center">
+        <div className="w-screen max-w-7xl justify-center">
           <DrawerMenuProvider>
             <NavBar lng={lng} />
           </DrawerMenuProvider>
-          <div className="h-full w-full px-[80px]">
+          <div className="h-full w-full px-6 xl:px-[80px]">
             <div id="home" className="flex h-screen w-full 2xl:h-[860px]">
-              <div className="h-full w-full pt-[140px]">
+              <div className="h-full w-full pt-[120px] xl:pt-[140px]">
                 <Introduction lng={lng} />
               </div>
             </div>

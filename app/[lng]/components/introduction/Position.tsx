@@ -9,7 +9,7 @@ export default function Position({
 }) {
   return (
     <>
-      <div className="font-caption text-right font-st font-light text-gray dark:text-beige sm:text-xl lg:text-2xl">
+      <div className="text-right font-st font-light text-gray dark:text-beige sm:text-xl lg:text-2xl xl:text-caption">
         {greetingWord}
       </div>
       <div className="mt-12 h-full w-full xl:mt-[70px] xl:px-8 xl:pt-4">

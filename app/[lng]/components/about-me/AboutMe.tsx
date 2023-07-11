@@ -8,7 +8,7 @@ function AboutMe({ lng }: BaseProp) {
   return (
     <div className="flex h-full w-full flex-col gap-5 xl:gap-10">
       <div className="flex w-full  gap-3 xl:h-[456px] xl:gap-4">
-        <div className="h-full w-1/2 border text-orange dark:text-green">
+        <div className="h-full w-1/2 text-orange dark:text-green">
           <ProfilePhoto /*style={{ height: '456px' }}*/ className={'flex items-start justify-start xl:h-[456px]'} />
         </div>
         <div className="flex h-full w-1/2 flex-col justify-between">

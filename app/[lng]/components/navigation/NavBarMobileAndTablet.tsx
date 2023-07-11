@@ -1,4 +1,5 @@
 'use client';
+
 import SiteLogo from './SiteLogo';
 import { TEXTS_LOGO } from '../../constants';
 import DrawerToggleButton from './DrawerToggleButton';

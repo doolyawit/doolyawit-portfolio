@@ -1,6 +1,13 @@
-export const GetInTouchGraphics = () => {
+export const GetInTouchGraphics = ({ className }: { className: string }) => {
   return (
-    <svg width="201" height="162" viewBox="0 0 201 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width="201"
+      height="162"
+      viewBox="0 0 201 162"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
       <rect
         x="9.38885"
         width="118.762"

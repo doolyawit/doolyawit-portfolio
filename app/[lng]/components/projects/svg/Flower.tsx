@@ -1,11 +1,19 @@
 interface FlowerProps {
   width: string;
   height: string;
+  className: string;
 }
 
-function Flower({ width, height }: FlowerProps) {
+function Flower({ width, height, className }: FlowerProps) {
   return (
-    <svg width={width} height={height} viewBox={`0 0 57 60`} fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      width={width}
+      height={height}
+      viewBox={`0 0 57 60`}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
       <mask id="mask0_690_2348" maskUnits="userSpaceOnUse" x="0" y="0" width="57" height="60">
         <path d="M57 0H0V60H57V0Z" fill="white" />
       </mask>

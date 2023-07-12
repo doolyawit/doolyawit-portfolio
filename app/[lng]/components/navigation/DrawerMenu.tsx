@@ -22,7 +22,7 @@ function DrawerMenu({ menuItems }: { menuItems: MenuItem[] }) {
         }}
         classes={{
           paper:
-            'bg-beige dark:bg-gray text-gray dark:text-beige px-8 pb-14 pt-28 sm:pt-36 sm:pb-18 md:pt-44 md:pb-22 lg:pt-60 lg:pb-30 flex flex-col justify-between items-center dark:selection:bg-orange selection:bg-green',
+            'text-gray dark:text-beige px-8 pb-14 pt-28 sm:pt-36 sm:pb-18 md:pt-44 md:pb-22 lg:pt-60 lg:pb-30 flex flex-col justify-between items-center dark:selection:bg-orange selection:bg-green',
         }}
       >
         <div className="flex flex-col gap-7">

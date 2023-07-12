@@ -9,3 +9,7 @@ body {
 .dark body {
   background-color: theme('colors.gray');
 }
+
+.MuiDrawer-root .MuiDrawer-paper {
+  height: 100%;
+}

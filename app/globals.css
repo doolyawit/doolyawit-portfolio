@@ -10,6 +10,12 @@ body {
   background-color: theme('colors.gray');
 }
 
+.dark .MuiDrawer-root .MuiDrawer-paper {
+  height: 100%;
+  background: theme('colors.gray');
+}
+
 .MuiDrawer-root .MuiDrawer-paper {
   height: 100%;
+  background: theme('colors.beige');
 }

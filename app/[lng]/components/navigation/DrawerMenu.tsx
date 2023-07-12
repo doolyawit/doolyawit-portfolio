@@ -1,4 +1,6 @@
-import { Drawer } from '@mui/material';
+'use client';
+
+import Drawer from '@mui/material/Drawer';
 import { MenuItem } from './NavMenuItem';
 import DrawerMenuItem from './DrawerMenuItem';
 import { useDrawerMenu } from '../../hooks/useDrawerMenu';
@@ -6,9 +8,13 @@ import ToggleButton from './ToggleButton';
 
 function DrawerMenu({ menuItems }: { menuItems: MenuItem[] }) {
   const { drawerOpen, anchor, toggleDrawer } = useDrawerMenu();
+
   return (
     <div>
       <Drawer
+        SlideProps={{
+          timeout: 300,
+        }}
         open={drawerOpen}
         anchor={anchor}
         onClose={() => {

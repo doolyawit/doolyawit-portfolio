@@ -7,7 +7,7 @@ export default async function ProjectHeader({ lng }: BaseProp) {
 
   return (
     <div className="flex w-full items-start justify-between border-b pb-2 sm:pb-4 lg:pb-6 xl:pb-10">
-      <div className="flex gap-4 self-center pb-2 font-jk text-3xl font-extrabold sm:text-4xl lg:text-5xl xl:pb-8 xl:text-7xl">
+      <div className="flex gap-4 self-center pb-2 font-jk text-4xl font-extrabold lg:text-5xl xl:pb-8 xl:text-7xl">
         <div className="flex self-end">{t('project.title')}</div>
         <div className="flex self-end text-orange dark:text-green">
           <Flower width="4rem" height="4rem" className="h-10 w-10 lg:h-14 lg:w-14 xl:h-16 xl:w-16" />

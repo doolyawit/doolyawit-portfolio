@@ -20,7 +20,7 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
                 <Introduction lng={lng} />
               </div>
             </div>
-            <div className="flex h-fit w-full md:h-screen lg:pt-16 xl:h-fit xl:pt-0 2xl:h-[720px]" id="about">
+            <div className="flex h-fit w-full sm:h-screen lg:pt-16 xl:h-fit xl:pt-0 2xl:h-[720px]" id="about">
               <AboutMe lng={lng} />
             </div>
             <div className="flex h-fit w-full" id="projects">

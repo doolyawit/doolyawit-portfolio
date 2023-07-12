@@ -13,11 +13,11 @@ export default async function ProjectCard({ lng, projects }: { lng: string; proj
         <div className="w-full border-b py-0" key={index}>
           <div className="mt-2 flex sm:mt-4 xl:mt-5">
             <div className="flex w-1/2 flex-col justify-between gap-2 pb-3 sm:gap-4 xl:gap-0 xl:pb-5">
-              <div className="text-jk text-lg font-semibold sm:text-xl lg:text-2xl xl:text-4xl">
+              <div className="text-jk text-xl font-semibold md:text-2xl lg:text-3xl xl:text-4xl">
                 {`${project.number} /`} <br />
                 {project.name}
               </div>
-              <div className="text-st w-2/3 break-words  text-start text-xs font-extralight sm:text-sm lg:text-justify xl:text-base">
+              <div className="text-st w-2/3 break-words text-start text-xs font-extralight sm:text-sm lg:text-justify lg:text-base">
                 {project.description}
               </div>
               <div>

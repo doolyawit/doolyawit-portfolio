@@ -29,7 +29,7 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
           </div>
         </div>
       </div>
-      <div className="flex h-fit w-full items-center justify-center" id="contact">
+      <div className="flex h-screen w-full items-center justify-center xl:h-fit" id="contact">
         <Contact lng={lng} />
       </div>
     </div>

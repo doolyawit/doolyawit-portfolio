@@ -10,24 +10,26 @@ export default async function Contact({ lng }: BaseProp) {
   const { t } = await useTranslation(lng);
 
   return (
-    <div className="relative mt-20 flex h-full w-full flex-col items-center justify-center overflow-y-hidden 2xl:max-w-7xl">
-      <div className="w-full max-w-7xl px-[80px]">
-        <div className="relative mb-[80px] min-h-[162px] w-full">
-          <div className="absolute left-[5%]">
-            <GetInTouchGraphics />
+    <div className="relative flex h-full w-full flex-col overflow-y-hidden px-8 pt-[130px] md:px-10 lg:px-12 xl:mt-28 xl:block xl:items-center xl:justify-center xl:px-[80px] xl:pt-0 2xl:max-w-7xl">
+      <div className="flex h-full w-full max-w-7xl flex-col">
+        <div className="relative mb-6 h-1/3 w-full xl:mb-[80px] xl:h-full xl:min-h-[162px]">
+          <div className="xl:absolute xl:left-[5%]">
+            <GetInTouchGraphics className="hidden xl:block xl:h-[162px] xl:w-[201px]" />
           </div>
           <div className="absolute h-full w-full">
             <div className="flex h-full w-full items-center justify-center">
-              <div className="mt-20">
+              <div className="xl:mt-20">
                 <ContactNavBar />
               </div>
             </div>
           </div>
         </div>
-        <div className="mb-[80px] flex w-full justify-center">
+        <GetInTouchGraphics className="absolute right-[40%] top-[35%] hidden w-36 md:block lg:w-48 xl:hidden" />
+        <div className="relative flex h-1/3 w-full justify-center px-8 xl:mb-[80px] xl:h-full">
           <LetWork label={t('contact.let_work_together')} />
+          <GetInTouchGraphics className="absolute right-[2%] w-32 sm:right-[4%] sm:top-[10%] md:hidden" />
         </div>
-        <div className="flex w-full justify-center pb-[64px]">
+        <div className="flex h-1/3 w-full justify-center pt-16 md:pt-20 lg:pt-32 xl:h-full xl:pb-[64px]">
           <Email />
         </div>
       </div>

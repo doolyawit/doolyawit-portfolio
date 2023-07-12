@@ -4,6 +4,7 @@ import SiteLogo from './SiteLogo';
 import { useTranslation } from '../../../i18n';
 import { BaseProp } from '../../../types';
 import { TEXTS_LOGO } from '../../constants';
+import NavBarMobileAndTablet from './NavBarMobileAndTablet';
 
 export default async function NavBar({ lng }: BaseProp) {
   const { t } = await useTranslation(lng);
@@ -16,11 +17,16 @@ export default async function NavBar({ lng }: BaseProp) {
   ];
 
   return (
-    <div className="fixed left-0 right-0 top-0 z-50 flex h-fit w-full items-center justify-center gap-4 bg-beige px-8 py-4 transition-all duration-300 selection:bg-green dark:bg-gray dark:selection:bg-orange">
-      <div className={'flex h-fit w-full max-w-7xl justify-between'}>
-        <SiteLogo textLogo={TEXTS_LOGO} height="106" />
-        <ToggleButton />
-        <NavMenu menuItems={menuItems} height="72" />
+    <div>
+      <div className="fixed left-0 right-0 top-0 z-50 hidden h-fit w-full items-center justify-center gap-4 bg-beige px-8 py-4 transition-all duration-300 selection:bg-green dark:bg-gray dark:selection:bg-orange xl:flex">
+        <div className={'flex h-fit w-full max-w-7xl justify-between'}>
+          <SiteLogo textLogo={TEXTS_LOGO} height="106" />
+          <ToggleButton />
+          <NavMenu menuItems={menuItems} height="72" />
+        </div>
+      </div>
+      <div className="fixed left-0 right-0 top-0 z-50 flex h-fit w-full items-center justify-center bg-beige px-8 py-4 transition-all duration-300 dark:bg-gray xl:hidden 2xl:hidden 3xl:hidden">
+        <NavBarMobileAndTablet menuItems={menuItems} />
       </div>
     </div>
   );

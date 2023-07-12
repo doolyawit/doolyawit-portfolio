@@ -4,9 +4,9 @@ import { BaseProp } from '../../../types';
 
 function Introduction({ lng }: BaseProp) {
   return (
-    <div className="w-full snap-center">
+    <div className="h-full w-full snap-center">
       <NameAndPosition lng={lng} />
-      <div className="text-center">
+      <div className="h-1/2 text-center xl:h-full">
         <HireMe lng={lng} />
       </div>
     </div>

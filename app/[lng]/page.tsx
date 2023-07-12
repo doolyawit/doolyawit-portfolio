@@ -14,9 +14,9 @@ export default async function HomePage({ params: { lng } }: ParamLanguage) {
           <DrawerMenuProvider>
             <NavBar lng={lng} />
           </DrawerMenuProvider>
-          <div className="h-full w-full px-8 xl:px-[80px]">
+          <div className="h-full w-full px-8 md:px-10 lg:px-12 xl:px-[80px]">
             <div id="home" className="flex h-screen w-full 2xl:h-[860px]">
-              <div className="h-full w-full pt-[115px] sm:pt-[130px] xl:pt-[140px]">
+              <div className="h-full w-full pt-[130px] md:pt-[140px]">
                 <Introduction lng={lng} />
               </div>
             </div>

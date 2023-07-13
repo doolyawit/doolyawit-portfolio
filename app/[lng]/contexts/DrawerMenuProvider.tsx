@@ -2,11 +2,12 @@
 
 import React, { useState } from 'react';
 import { createContext } from 'react';
+import { Direction } from '../../types';
 
 interface DrawerMenuContextProps {
   drawerOpen: boolean;
   toggleDrawer: () => void;
-  anchor: 'top' | 'left' | 'bottom' | 'right';
+  anchor: Direction;
 }
 
 export const DrawerMenuContext = createContext<DrawerMenuContextProps>({} as DrawerMenuContextProps);

@@ -19,3 +19,7 @@ body {
   height: 100%;
   background: theme('colors.beige');
 }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}

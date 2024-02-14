@@ -6,6 +6,7 @@ import { languages } from '../i18n/settings';
 import { ParamLanguage } from '../types';
 import { Metadata } from 'next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/react';
 
 export async function generateStaticParams() {
   return languages.map((lng) => ({ lng }));
@@ -35,6 +36,7 @@ export default async function RootLayout({ children, params: { lng } }: ParamLan
       <body className={`${satoshi.variable} transition-colors duration-300`}>
         <NextThemeProvider>{children}</NextThemeProvider>
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );

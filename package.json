@@ -20,6 +20,7 @@
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
+    "@vercel/speed-insights": "^1.0.9",
     "accept-language": "3.0.18",
     "axios": "^1.4.0",
     "eslint-config-next": "13.4.7",
